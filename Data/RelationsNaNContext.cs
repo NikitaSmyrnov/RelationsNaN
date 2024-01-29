@@ -3,7 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.CodeAnalysis;
 using Microsoft.EntityFrameworkCore;
+using RelationsNaN.Controllers;
 using RelationsNaN.Models;
 
 namespace RelationsNaN.Data
@@ -23,5 +25,7 @@ namespace RelationsNaN.Data
 
         public DbSet<Game> Game { get; set; } = default!;
         public DbSet<Genre> Genre { get; set; } = default!;
+        public DbSet<Models.Platform> Platform { get; set; } = default!;
+          public DbSet<Purchase> Purchase { get; set; } = default!;
     }
 }
